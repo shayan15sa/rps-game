@@ -18,17 +18,16 @@ if inp == "p" and inp == "r" and inp == "s":
 list = ["p", "r", "s"]
 ans = random.choice(list)
 
+clear()
+
 
 def animate():
-    sys.stdout.write("\rloading |")
-    time.sleep(0.1)
-    sys.stdout.write("\rloading /")
-    time.sleep(0.1)
-    sys.stdout.write("\rloading -")
-    time.sleep(0.1)
-    sys.stdout.write("\rloading \\")
-    time.sleep(0.1)
-    sys.stdout.write("\rDone!     ")
+    sys.stdout.write("\r    1")
+    time.sleep(1)
+    sys.stdout.write("\r    2")
+    time.sleep(1)
+    sys.stdout.write("\r    3")
+    time.sleep(1)
 
 
 animate()
@@ -43,11 +42,11 @@ elif inp == "r":
     print("you : " + emoji.emojize(":mountain:"))
 
 if ans == "p":
-    print("pc : " + emoji.emojize(":memo:"))
+    print("pc :" + emoji.emojize(":memo:"))
 elif ans == "s":
-    print("pc : " + emoji.emojize(":scissors:"))
+    print("pc :" + emoji.emojize(":scissors:"))
 elif ans == "r":
-    print("pc : " + emoji.emojize(":mountain:"))
+    print("pc :" + emoji.emojize(":mountain:"))
 
 
 if inp == ans:
