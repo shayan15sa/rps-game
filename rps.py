@@ -13,8 +13,12 @@ def clear():
 clear()
 print("Hi Let's play \n" + "paper or scissor or rock")
 inp = input()
-if inp == "p" and inp == "r" and inp == "s":
-    exit()
+
+# p as paper
+# s as scissor
+# r as rock
+
+
 list = ["p", "r", "s"]
 ans = random.choice(list)
 
